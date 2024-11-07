@@ -106,7 +106,7 @@ def main():
     st.set_page_config(layout="wide")  # Set layout to wide for better visibility
 
     # Load data from JSON file for team stats at the start of main()
-    with open('nfl_team_stats.json', 'r') as f:
+    with open('football_team_stats.json', 'r') as f:
         all_team_stats = json.load(f)
 
     # Create a layout with spacer columns for simulated left alignment
@@ -114,7 +114,7 @@ def main():
 
     # First column: Title
     with col1:
-        st.title("NFL Team Dashboard")
+        st.title("Football Team Dashboard")
 
     # Second column: Selectbox for choosing the team
     with col2:
